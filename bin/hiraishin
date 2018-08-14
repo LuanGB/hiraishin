@@ -1,0 +1,40 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+
+require_relative '../lib/hiraishin'
+
+#TODO: Add support for other GUIs
+
+Options = Struct.new(:name, :command, :keys)
+
+args = Options.new
+
+opt_parser = OptionParser.new do |opts|
+  opts.banner = "Usage: hiraishin -n NAME -c path/to/command -k keys,to,be,pressed"
+
+  opts.on("-n NAME", "--name=NAME", "Name of the shortcut") do |n|
+    args.name = n
+  end
+
+  opts.on("-c COMMAND", "--command=COMMAND", "Command to be executed") do |c|
+    args.command = c
+  end
+
+  opts.on("-k KEYS", "--keys=KEYS", Array, "Keys to bind shortcut to") do |keys|
+    args.keys = keys
+  end
+
+  opts.on("-h", "--help", "Prints this help") do
+    puts opts
+    exit
+  end
+
+  opts.on("") do
+    puts opts
+    exit
+  end
+
+end.parse!(ARGV)
+
+Hiraishin.add_shortcut_to_cinnamon args.name, args.command, *args.keys
