@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'hiraishin'
-  spec.version       = '0.0.1'
+  spec.version       = '0.0.3'
   spec.authors       = ['Luan Gonçalves Barbosa']
   spec.email         = ['luan.goncbs@gmail.com']
   spec.summary       = 'A simple gem that adds executable and library for adding shortcuts to programs'
