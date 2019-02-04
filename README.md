@@ -11,7 +11,7 @@ Check the rubygems link [here](http://rubygems.org/gems/hiraishin)
 ## Name
 
 
-This gem was named after Yondaime Hokage's main technique [Flying Raijin Jutsu](http://naruto.wikia.com/wiki/Flying_Thunder_God_Technique) (or *Hiraishin no Jutsu*, in Rōmaji), witch allows the user to instantaneously teleport themselves to a previously marked location.
+This gem was named after Yondaime Hokage's main technique [Flying Raijin Jutsu](http://naruto.wikia.com/wiki/Flying_Thunder_God_Technique) (or *Hiraishin no Jutsu*, in Rōmaji), which allows the user to instantaneously teleport themselves to a previously marked location.
 Similarly, this gem allow its user to create shortcuts and bind them to commands, allowing instant access.
 
 
