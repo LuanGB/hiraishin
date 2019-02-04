@@ -15,16 +15,18 @@ class Hiraishin
 
   private
 
-  def self.format_keys(keys)
-    [keys[0..-2].map{ |key| "<#{key}>" }.join, keys[-1].downcase].join
-  end
+  class << self
+    def format_keys(keys)
+      [keys[0..-2].map{ |key| "<#{key}>" }.join, keys[-1].downcase].join
+    end
 
-  def self.current_shortcuts
-    @current_shortcuts ||= `gsettings get org.cinnamon.desktop.keybindings custom-list`.chomp[1..-2]&.split(', ')
-  end
+    def current_shortcuts
+      @current_shortcuts ||= `gsettings get org.cinnamon.desktop.keybindings custom-list`.chomp[1..-2]&.split(', ')
+    end
 
-  def self.last_shortcode_number
-    last_keybinding = current_shortcuts.sort.last
-    (last_keybinding[-2].to_i + 1).to_s
+    def last_shortcode_number
+      last_keybinding = current_shortcuts.sort.last
+      (last_keybinding[-2].to_i + 1).to_s
+    end
   end
 end
