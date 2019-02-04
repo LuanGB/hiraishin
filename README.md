@@ -1,4 +1,4 @@
-![Travis (.org) branch](https://img.shields.io/travis/LuanGB/hiraishin/master.svg) ![Gem](https://img.shields.io/gem/v/hiraishin.svg) [![Gem](https://img.shields.io/gem/dt/hiraishin.svg)](https://rubygems.org/gems/hiraishin) ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg) 
+![Travis (.org) branch](https://img.shields.io/travis/LuanGB/hiraishin/master.svg) ![Gem](https://img.shields.io/gem/v/hiraishin.svg) [![Gem](https://img.shields.io/gem/dt/hiraishin.svg)](https://rubygems.org/gems/hiraishin) ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 
 # Hiraishin
@@ -11,7 +11,7 @@ Check the rubygems link [here](http://rubygems.org/gems/hiraishin)
 ## Name
 
 
-This gem was named after Yondaime Hokage's main technique [Flying Raijin Jutsu](http://naruto.wikia.com/wiki/Flying_Thunder_God_Technique) (or *Hiraishin no Jutsu*, in Rōmaji), witch allows the user to instantaneously teleport themselves to a previously marked location.
+This gem was named after Yondaime Hokage's main technique [Flying Raijin Jutsu](http://naruto.wikia.com/wiki/Flying_Thunder_God_Technique) (or *Hiraishin no Jutsu*, in Rōmaji), which allows the user to instantaneously teleport themselves to a previously marked location.
 Similarly, this gem allow its user to create shortcuts and bind them to commands, allowing instant access.
 
 
@@ -28,7 +28,7 @@ gem install hiraishin
 
 
 Command line utility usage example:
-```bash 
+```bash
 hiraishin -n browser -c /usr/bin/google-chrome -k Ctrl,Alt,Shift,c
 ```
 
